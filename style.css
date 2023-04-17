@@ -44,6 +44,8 @@ body{
         color: rgb(0, 0, 0);
         text-decoration: none;
         font-weight: bold;
+        /* Change cursor*/
+        cursor: pointer;
     }
     header nav a:hover {
         color: #fff;

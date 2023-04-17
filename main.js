@@ -15,12 +15,12 @@ const hobbiesPageContent = `
 <p> Here you can write a little about your hobbies</p>
 `;
 const contactPageContent=
-`<h1> Contact</h1>
+`<h1> Contact me</h1>
 <p> Contact me</p>
 `;
 /* Functions*/
 // Grab elements 
-const mainContent= document.querySelector("main-content");
+const mainContent= document.querySelector("#main-content");
 const navlinks= document.querySelectorAll("nav a");
 
 
@@ -31,7 +31,7 @@ const navlinks= document.querySelectorAll("nav a");
 navlinks.forEach(link => {
  link.addEventListener("click",  event=> {
     event.preventDefault(); //prevent page reload
-    const link = link.dataset.page; //Get the string from data-page attribute 
+    const page = link.dataset.page; //Get the string from data-page attribute 
     setActiveNavLink(link); //Move the "active" class
     updatePageContent(page); //Render new page
  });

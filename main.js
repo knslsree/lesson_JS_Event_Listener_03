@@ -75,6 +75,10 @@ function updatePageContent(page){
    }
 }
 
+ // since we have an empty div and need some default contactPageContent
+// we run this function once with out a property to get the default case of the switch
+updatePageContent();
+
 
 
 
